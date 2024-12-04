@@ -1,0 +1,334 @@
+/* :root {
+  /* --dark-blue: #683efe70;
+  --medium-blue: #3701fe70;
+  --light-blue: #e3f2fd;
+  --text-color: #333;
+  --footer-blue: #171717c0;
+  --link-hover-red: #ff5100;
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  background-image: linear-gradient(45deg, #a1a1a180, #f0f0f0),
+    url("./pics/bw-bg.webp");
+  color: #171717c0;
+  background-size: 100vmax;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171717c0;
+  color: #f0f0f0;
+  position: fixed;
+  width: 100vw;
+  padding: 0.0625rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.479);
+}
+
+.logo p {
+  font-size: 1.5rem;
+  font-family: "Passion One", cursive;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.navbar {
+  flex: 1;
+  margin: 1rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar a {
+  justify-content: center;
+  text-decoration: underline;
+  color: #f0f0f0;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #f90;
+}
+
+/* ICONS */
+
+.icons a {
+  margin-right: 2rem;
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+.icons a:hover {
+  color: #f90;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.about-me {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2rem;
+  width: 100%;
+}
+.about-me img {
+  max-width: 100%;
+  height: 80vh;
+  border-radius: 0.625rem;
+  margin: 4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.479);
+  transition: transform 0.3s ease-in-out;
+  transition: 0.4s ease;
+}
+& img:hover {
+  transform: scale(1.175);
+}
+.about-text {
+  background-color: #ffffffc5;
+  max-width: 100%;
+  max-height: 25%;
+  text-align: justify;
+  border-radius: 0.625rem;
+  border-left: #171717c0 solid 0.625rem;
+  margin: 4rem;
+  /* margin-left: 2rem; */
+  padding: 2rem;
+  padding-bottom: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.479);
+}
+.about-text p {
+  margin: 4rem 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  font-weight: bold;
+  line-height: 2;
+  font-size: 1.5rem;
+}
+h2 {
+  font-family: "Passion One", cursive;
+  font-size: 6rem;
+  font-weight: 600;
+  text-decoration: underline #171717c0 solid 0.5rem;
+  text-align: center;
+}
+
+.skill-project-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 2rem;
+}
+.skill-bar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffffc5;
+  width: 30%;
+  border-radius: 0.625rem;
+  border-top: #171717c0 solid 0.625rem;
+  margin: 4rem;
+  margin-top: 0;
+  padding: 0rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.479);
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 0.625rem;
+  text-align: center;
+}
+& label {
+  font-weight: bold;
+  color: #171717c0;
+  margin-bottom: 0.5rem;
+}
+.skill-bar {
+  display: flex;
+  height: 1rem;
+  background: linear-gradient(90deg, #4caf50, #171717c0);
+  border-radius: 0.3125rem;
+}
+/* .skills {
+  max-width: 100%;
+  margin: 4rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.774);
+  border-radius: 0.625rem;
+  border-top: #171717c0 solid 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills label {
+  display: block;
+  font-weight: bold;
+  color: #171717c0;
+  margin-bottom: 0.5rem;
+}
+
+.skills input[type="range"] {
+  width: 100%;
+  appearance: none;
+  height: 1rem;
+  border-radius: 0.3125rem;
+  background: linear-gradient(90deg, #4caf50, #171717c0);
+  outline: none;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+*/
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 2rem auto;
+}
+/* #1 */
+.card-project-1 {
+  background-color: #ffffffc5;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.479);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 50rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.card-project-1 h3 {
+  font-family: "Passion One", cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.card-project-1 p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* #2 */
+.card-project-2 {
+  background-color: rgba(255, 255, 255, 0.774);
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.479);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 50rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.card-project-2 h3 {
+  font-family: "Passion One", cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.card-project-2 p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* #3 */
+.card-project-3 {
+  background-color: rgba(255, 255, 255, 0.774);
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.479);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 50rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.card-project-3 h3 {
+  font-family: "Passion One", cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.card-project-3 p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* #4 */
+.card-project-4 {
+  background-color: rgba(255, 255, 255, 0.774);
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.479);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 50rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.card-project-4 h3 {
+  font-family: "Passion One", cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.card-project-4 p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* .skill input[type="range"]:hover {
+  opacity: 1; */
+
+/* .links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.links .button1,
+.links .button2 {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #222;
+  border-radius: 0.3125rem;
+  transition: background-color 0.3s;
+}
+
+.links .button1:hover,
+.links .button2:hover {
+  background-color: #f90;
+} */
+
+footer {
+  background-color: #171717c0;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.479);
+}
+footer p {
+  font-size: 0.75rem;
+}
